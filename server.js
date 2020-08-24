@@ -14,10 +14,10 @@ server.use(bodyParser.urlencoded({ extended: false }));
 server.use("/", [require("./routes/sms")]);
 
 // Start the server
-server.listen(7000, (error) => {
+server.listen(process.env.PORT, (error) => {
   if (error) {
     console.error("Error starting", error);
   } else {
-    console.info("Started at http://localhost:7000");
+    console.info(`Listening on port ${process.env.PORT}`);
   }
 });
