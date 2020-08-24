@@ -7,4 +7,4 @@
 ![Node.js CI](https://github.com/naivedeveloper95/node-twilio-integration/workflows/Node.js%20CI/badge.svg)
 ![Node.js CI](https://github.com/naivedeveloper95/node-twilio-integration/workflows/Node.js%20CI/badge.svg)
 
-# This a basic node project for sample node-Twilio integration
+## This a basic node project for sample node-Twilio integration
