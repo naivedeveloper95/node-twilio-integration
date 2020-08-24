@@ -10,7 +10,7 @@ const sendSMS = (to, body) => {
   // Create new twilio client
   const client = new twilio(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN);
 
-  return new Promise((success, fail) => {
+  return new Promise((resolve, reject) => {
     // Send the text message.
     client.messages.create(
       {
@@ -20,9 +20,9 @@ const sendSMS = (to, body) => {
       },
       (error, message) => {
         if (error) {
-          fail(error);
+          reject(error);
         } else {
-          success({ to, body });
+          resolve({ to, body });
         }
       }
     );
@@ -39,7 +39,7 @@ const sendSMSUsingCopilot = (to, body) => {
   // Create new twilio client
   const client = new twilio(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN);
 
-  return new Promise((success, fail) => {
+  return new Promise((resolve, reject) => {
     // Send the text message.
     client.messages.create(
       {
@@ -49,9 +49,9 @@ const sendSMSUsingCopilot = (to, body) => {
       },
       (error, message) => {
         if (error) {
-          fail(error);
+          reject(error);
         } else {
-          success({ to, body });
+          resolve({ to, body });
         }
       }
     );
@@ -60,7 +60,7 @@ const sendSMSUsingCopilot = (to, body) => {
 
 // Send Group SMS Messages
 const sendGroupSMS = (numbers, body) => {
-  return new Promise((success, fail) => {
+  return new Promise((resolve, reject) => {
     const delivered = []; // List of numbers in which message is delivered successfully
     const failed = []; // List of numbers in which message failed delivery
 
@@ -77,7 +77,7 @@ const sendGroupSMS = (numbers, body) => {
       })
     ).then((results) => {
       // Return the message sent, the numbers delivered to and the numbers which failed
-      success({ body, delivered, failed });
+      resolve({ body, delivered, failed });
     });
   });
 };
