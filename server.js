@@ -18,6 +18,6 @@ server.listen(7000, (error) => {
   if (error) {
     console.error("Error starting", error);
   } else {
-    console.log("Started at http://localhost:7000");
+    console.info("Started at http://localhost:7000");
   }
 });
