@@ -41,17 +41,3 @@ Content-Type: application/json
   "message": "Hello, this is a group sms"
 }
 ```
-
-## References
-
-### Bulk SMS
-
-- <https://www.twilio.com/blog/2017/12/send-bulk-sms-twilio-node-js.html>
-
-### Receiving Two-way SMS Messages
-
-- <https://support.twilio.com/hc/en-us/articles/235288367-Receiving-two-way-SMS-messages-with-Twilio>
-
-### How to receive sms in Node.js with Twilio
-
-- <https://www.twilio.com/blog/2016/08/how-to-receive-an-sms-in-node-js-with-twilio-and-hyperdev.html>
