@@ -1,5 +1,5 @@
 {
-  "name": "node-twilio-sms",
+  "name": "node-twilio-integration",
   "version": "1.0.0",
   "description": "SMS with JavaScript using Twilio",
   "main": "index.js",

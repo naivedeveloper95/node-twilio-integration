@@ -15,6 +15,9 @@ server.use("/", [require("./routes/sms")]);
 
 // Start the server
 server.listen(7000, (error) => {
-  if (error) console.error("Error starting", error);
-  else console.log("Started at http://localhost:7000");
+  if (error) {
+    console.error("Error starting", error);
+  } else {
+    console.log("Started at http://localhost:7000");
+  }
 });

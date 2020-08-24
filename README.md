@@ -1,9 +1,10 @@
-![Node.js CI](https://github.com/naivedeveloper95/node-twilio-integration/workflows/Node.js%20CI/badge.svg)
-![Node.js CI](https://github.com/naivedeveloper95/node-twilio-integration/workflows/Node.js%20CI/badge.svg)
-![Node.js CI](https://github.com/naivedeveloper95/node-twilio-integration/workflows/Node.js%20CI/badge.svg)
-![Node.js CI](https://github.com/naivedeveloper95/node-twilio-integration/workflows/Node.js%20CI/badge.svg)
 
 # node-twilio-integration
+
+![Node.js CI](https://github.com/naivedeveloper95/node-twilio-integration/workflows/Node.js%20CI/badge.svg)
+![Node.js CI](https://github.com/naivedeveloper95/node-twilio-integration/workflows/Node.js%20CI/badge.svg)
+![Node.js CI](https://github.com/naivedeveloper95/node-twilio-integration/workflows/Node.js%20CI/badge.svg)
+![Node.js CI](https://github.com/naivedeveloper95/node-twilio-integration/workflows/Node.js%20CI/badge.svg)
 
 ## Routes
 
@@ -44,12 +45,12 @@ Content-Type: application/json
 
 ### Bulk SMS
 
-- https://www.twilio.com/blog/2017/12/send-bulk-sms-twilio-node-js.html
+- <https://www.twilio.com/blog/2017/12/send-bulk-sms-twilio-node-js.html>
 
 ### Receiving Two-way SMS Messages
 
-- https://support.twilio.com/hc/en-us/articles/235288367-Receiving-two-way-SMS-messages-with-Twilio
+- <https://support.twilio.com/hc/en-us/articles/235288367-Receiving-two-way-SMS-messages-with-Twilio>
 
 ### How to receive sms in Node.js with Twilio
 
-- https://www.twilio.com/blog/2016/08/how-to-receive-an-sms-in-node-js-with-twilio-and-hyperdev.html
+- <https://www.twilio.com/blog/2016/08/how-to-receive-an-sms-in-node-js-with-twilio-and-hyperdev.html>

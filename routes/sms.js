@@ -1,5 +1,4 @@
-const express = require("express");
-const router = express.Router();
+const router = require("express").Router();
 const {
   sendSMS,
   sendSMSUsingCopilot,
@@ -48,7 +47,6 @@ router.post("/sendGroupSMS", (req, res) => {
 // POST - Receive SMS Message
 router.post("/receiveSMS", (req, res) => {
   const attributes = req.body;
-  console.log(attributes);
   // res.send(`<Response><Message>${attributes}</Message></Response>`)
   res.status(201).json({ attributes });
 });
