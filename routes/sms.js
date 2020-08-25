@@ -32,11 +32,4 @@ router.post("/sendGroupSMS", (req, res) => {
     .catch((error) => res.status(400).json({ error }));
 });
 
-// POST - Receive SMS Message
-router.post("/receiveSMS", (req, res) => {
-  const attributes = req.body;
-  // res.send(`<Response><Message>${attributes}</Message></Response>`)
-  res.status(201).json({ attributes });
-});
-
 module.exports = router;
