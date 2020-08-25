@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const {
   sendSMS,
-  sendSMSUsingCopilot,
+  smsUsingMessageServiceID,
   sendGroupSMS,
 } = require("../twilio/twilioClient");
 
@@ -15,10 +15,10 @@ router.post("/sms", (req, res) => {
 });
 
 // POST - Send a SMS message using Copilot Messaging Service
-router.post("/smsCopilot", (req, res) => {
+router.post("/smsUsingMessageServiceID", (req, res) => {
   const attributes = req.body;
 
-  sendSMSUsingCopilot(attributes.recipient, attributes.message)
+  smsUsingMessageServiceID(attributes.recipient, attributes.message)
     .then((data) => res.status(201).json({ data }))
     .catch((error) => res.status(400).json({ error }));
 });

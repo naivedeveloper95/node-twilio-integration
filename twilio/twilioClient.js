@@ -30,7 +30,7 @@ const sendSMS = (to, body) => {
 };
 
 // Send SMS Messages using Co-pilot (Twilio Messaging Service)
-const sendSMSUsingCopilot = (to, body) => {
+const smsUsingMessageServiceID = (to, body) => {
   // Initialise account credentials
   const TWILIO_ACCOUNT_SID = process.env.TWILIO_ACCOUNT_SID;
   const TWILIO_AUTH_TOKEN = process.env.TWILIO_AUTH_TOKEN;
@@ -67,7 +67,7 @@ const sendGroupSMS = (numbers, body) => {
     Promise.all(
       // For every recipient phone number
       numbers.map((to) => {
-        return sendSMS(to, body) // Optional: Can be changed to sendSMSUsingCopilot if using Co-pilot
+        return sendSMS(to, body) // Optional: Can be changed to smsUsingMessageServiceID if using Co-pilot
           .then((success) => {
             delivered.push(to); // Message is delivered
           })
@@ -84,6 +84,6 @@ const sendGroupSMS = (numbers, body) => {
 
 module.exports = {
   sendSMS,
-  sendSMSUsingCopilot,
+  smsUsingMessageServiceID,
   sendGroupSMS,
 };
